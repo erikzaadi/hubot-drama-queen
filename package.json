@@ -1,0 +1,26 @@
+{
+  "name": "hubot-drama-queen",
+  "version": "0.0.1",
+  "description": "Make Hubot announce when a user enters or exits a chat room",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikzaadi/hubot-drama-queen"
+  },
+  "scripts" : { 
+    "test": "make test"
+  },
+  "keywords": [
+    "hubot"
+  ],
+  "author": "Erik Zaadi",
+  "license": "MIT",
+  "dependencies": {
+    "hubot": "~2.3.4",
+    "coffee-script": "~1.4.0"
+  },
+  "devDependencies": {
+    "chai": "~1.4.2",
+    "mocha": "~1.7.4",
+    "underscore": "~1.4.3"
+  }
+}
