@@ -15,11 +15,11 @@ Cancel the announcement for the chat *room*
 
 List the rooms the user has messages for
     
-    hubot drama list
+    hubot drama list all
 
 List all the messages for the chat *room
     
-    hubot drama list for <room>
+    hubot drama list <room>
     
 #### License
 **MIT**
