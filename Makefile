@@ -14,6 +14,9 @@ test-pretty: deps
 test-pretty-watch: deps
 	@mocha --compilers coffee:coffee-script -w -R spec
 
+lint: deps
+	@coffeelint -r src test
+
 #atest-coverage: deps
 #	@mocha
 

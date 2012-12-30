@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/erikzaadi/hubot-drama-queen"
   },
-  "scripts" : { 
+  "scripts": {
     "test": "make test"
   },
   "keywords": [
@@ -21,6 +21,7 @@
   "devDependencies": {
     "chai": "~1.4.2",
     "mocha": "~1.7.4",
-    "underscore": "~1.4.3"
+    "underscore": "~1.4.3",
+    "coffeelint": "~0.5.4"
   }
 }

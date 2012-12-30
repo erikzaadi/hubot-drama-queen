@@ -1,0 +1,3 @@
+0.0.3 : STILL IN PROGRESS: Multiple messages per room, redis compatible
+0.0.2 : Documentation fixes, change {,get}ReplyUser 
+0.0.1 : Initial Release
