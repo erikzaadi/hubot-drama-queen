@@ -30,6 +30,7 @@ List all the messages for the chat *room
 or
 
 In your deployed ```hubot``` directory:
+
     npm i --save hubot-drama-queen
     ln -s node_modules/hubot-drama-queen/src/scripts/dramaqueen.coffee node_modules/hubot-scripts/src/scripts/dramaqueen.coffee
 
