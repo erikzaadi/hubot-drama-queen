@@ -1,4 +1,4 @@
-## Hubot Drama Queen
+## Hubot Drama Queen [![Build Status](https://secure.travis-ci.org/erikzaadi/jQuery.printElement.png?branch=master)](http://travis-ci.org/erikzaadi/hubot-drama-queen)
 
 ![Hubot Drama Queen](http://cdn.memegenerator.net/instances/400x/32646936.jpg "Announce me hubot!!")
 
