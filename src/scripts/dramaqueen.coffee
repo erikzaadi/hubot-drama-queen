@@ -8,10 +8,8 @@
 #   None
 #
 # Commands:
-#   hubot drama set join message of #<room> to <message> - Announce <message> when user enters the chat #<room>
-#   hubot drama clear join message of #<room> - Cancel the announcement for the chat #<room>
-#   hubot drama set leave message of #<room> to <message> - Announce <message> when user exits the chat #<room>
-#   hubot drama clear leave message of #<room> - Cancel the announcement for the chat #<room>
+#   hubot drama set <join|leave> message of #<room> to <message> - Announce <message> when user enters|exits the chat #<room>
+#   hubot drama clear <join|leave> message of #<room> - Cancel the announcement for the chat #<room>
 #   hubot drama list - List the rooms the user has messages for
 #   hubot drama list for #<room> - List all the messages for the chat #<room>
 #
