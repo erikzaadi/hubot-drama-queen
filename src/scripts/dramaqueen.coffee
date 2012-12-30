@@ -10,8 +10,8 @@
 # Commands:
 #   hubot drama set <join|leave> message of #<room> to <message> - Announce <message> when user enters|exits the chat #<room>
 #   hubot drama clear <join|leave> message of #<room> - Cancel the announcement for the chat #<room>
-#   hubot drama list - List the rooms the user has messages for
-#   hubot drama list for #<room> - List all the messages for the chat #<room>
+#   hubot drama list all - List the rooms the user has messages for
+#   hubot drama list room #<room> - List all the messages for the chat #<room>
 #
 # Author:
 #   erikzaadi
@@ -20,7 +20,8 @@ module.exports = (robot) ->
   operations =
     leaving: 'leave'
     joining: 'join'
-  replyToUser = (user) ->
+
+  getReplyToUser = (user) ->
     name:user.name
     id:user.id
 
@@ -34,7 +35,7 @@ module.exports = (robot) ->
   clearMyDrama = (response, operation) ->
     room = response.match[1]
     user = response.message.user
-    replyToUser = replyToUser user
+    replyToUser = getReplyToUser user
 
     if stringNullEmptyOrOnlySpaces room
       return response.robot.reply replyToUser, errors.roomEmpty
@@ -49,7 +50,7 @@ module.exports = (robot) ->
     message = response.match[2]
     room = response.match[1]
     user = response.message.user
-    replyToUser = replyToUser user
+    replyToUser = getReplyToUser user
 
     if stringNullEmptyOrOnlySpaces room
       return response.robot.reply replyToUser, errors.roomEmpty
@@ -70,7 +71,7 @@ module.exports = (robot) ->
 
   listMyDrama = (response) ->
     user = response.robot.brain.data.users[response.message.user.id]
-    replyToUser = {name:user.name, id:user.id}
+    replyToUser = getReplyToUser user
     filterRoom = response.match[1]
 
     filterRoomFunc = (room, operation, user, filterRoom) ->
