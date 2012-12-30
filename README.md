@@ -25,7 +25,15 @@ List all the messages for the chat *room
 **MIT**
 
 #### Installation:
-```curl|wget https://github.com/erikzaadi/hubot-drama-queen/raw/master/src/scripts/dramaqueen.coffee```  to your hubot installation ```scripts``` folder, and add ```dramaqueen.coffee``` to your ```hubot-scripts.json``` file.
+```curl|wget https://github.com/erikzaadi/hubot-drama-queen/raw/master/src/scripts/dramaqueen.coffee```  to your hubot installation's ```scripts``` folder.
+
+or
+
+In your deployed ```hubot``` directory:
+    npm i --save hubot-drama-queen
+    ln -s node_modules/hubot-drama-queen/src/scripts/dramaqueen.coffee node_modules/hubot-scripts/src/scripts/dramaqueen.coffee
+
+And add ```dramaqueen.coffee``` to your ```hubot-scripts.json``` file.
 
 #### Hacking:
     npm i -d
