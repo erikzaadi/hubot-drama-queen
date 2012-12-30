@@ -1,6 +1,6 @@
 {
   "name": "hubot-drama-queen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make Hubot announce when a user enters or exits a chat room",
   "repository": {
     "type": "git",
